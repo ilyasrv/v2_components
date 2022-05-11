@@ -1,0 +1,75 @@
+body {
+
+    margin: 0;
+    padding: 0;
+}
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+    -ms-overflow-style: none;
+scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+
+display: none; 
+
+}
+
+
+
+
+
+
+// grid
+$max-col-xsm: 360px;
+$max-col-sm: 575px;
+$min-col-sm: 576px;
+$max-col-md: 767px;
+$min-col-md: 768px;
+$max-col-lg: 991px;
+$min-col-lg: 992px;
+$max-col-xl: 1139px;
+$min-col-xl: 1140px;
+$max-col-notebook: 1366px;
+$min-col-notebook: 1367px;
+$max-col-xxl: 1899px;
+$min-col-xxl: 1900px;
+
+// container
+@mixin container() {
+    & {
+        margin: 0 auto;
+		width: 100%;
+    }
+    @media(max-width: $max-col-sm) {
+        & {
+            width: 90%;
+        }
+    }
+    @media(min-width: $min-col-sm) AND (max-width: $max-col-md) {
+        & {
+            width: 95%;
+        }
+    }
+    @media(min-width: $min-col-md) AND (max-width: $max-col-lg) {
+        & {
+            width: 95%;
+        }
+    }
+    @media (min-width: $min-col-lg) AND (max-width: $max-col-notebook) {
+        & {
+            width: 85%
+        }
+    }
+    @media(min-width: $min-col-notebook) AND (max-width: $max-col-xxl) {
+        & {
+            width: 85%;
+        }
+    }
+    @media(min-width: $min-col-xxl) {
+        & {
+            width: 80%;
+        }
+    }
+}
