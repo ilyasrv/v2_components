@@ -3,7 +3,6 @@ import './App.css';
 import './styles/general.scss';
 
 
-
 function App() {
   return (
 <></>
