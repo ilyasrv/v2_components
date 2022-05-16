@@ -1,11 +1,9 @@
 
 import "./helper.css";
-
-
 import React from "react";
-import { render } from "react-dom";
 import { Formik } from "formik";
 import * as Yup from "yup";
+import { Button } from "../Button/Button";
 
 export const Appform = () => (
 
@@ -59,10 +57,12 @@ export const Appform = () => (
               {errors.email && touched.email && (
                 <div className="input-feedback">{errors.email}</div>
               )}
-
+              <Button type={"submit"} disabled={isSubmitting}>Sign Up</Button>
+              {/* OLD
               <button type="submit" disabled={isSubmitting}>
                 Sign Up
-              </button>
+              </button> */}
+
             </div>
           </form>
         );

@@ -1,0 +1,35 @@
+.header .wrapper {
+	display: flex;
+	justify-content: space-between;
+	max-width: 1440px;
+}
+.header .wrapper > .navbartoggler {
+	max-width: 1070px;
+	width: 100%;
+}
+.header .wrapper > .navbartoggler .siteheadertop {
+	justify-content: space-between;
+	width: 100%;
+	height: 50px;
+	position: relative;
+}
+.header .wrapper > .navbartoggler .siteheadertop .linkmenu {
+	display: flex;
+	justify-content: space-between;
+}
+.header .wrapper > .navbartoggler .siteheadertop .linkmenu .link {
+	width: 100px;
+	align-items: center;
+	padding: 15px 20px;
+	border-color: white;
+	background-color: #fff;
+	color: black;
+	font-size: 15px;
+	line-height: 18px;
+	font-weight: 500;
+}
+.header .wrapper .siteheaderbottom {
+	width: 100%;
+	height: 50px;
+	background: white;
+}

@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import people from "./data";
+import './review.css';
 // import { FaChevronLeft, FaChevronRight, FaQuoteRight } from "react-icons/fa";
 
-const Review = () => {
+export const ReviewMy = () => {
   const [index] = useState(0);
   const { name, job, image, text, score } = people[index];
 
@@ -22,7 +23,7 @@ const Review = () => {
   //   });
   // };
 
-  return (
+  return (  
     <article className="review">
       <div className="review__box">
       <div className="header-container">
@@ -84,4 +85,3 @@ const Review = () => {
   );
 };
 
-export default Review;

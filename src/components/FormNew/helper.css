@@ -73,7 +73,7 @@ label {
   margin-top: 0.25rem;
 }
 
-button {
+/* button {
   width: 250px;
   height: 65px;
   margin: 20px 0;
@@ -89,7 +89,7 @@ button {
   outline: none;
   -webkit-appearance: none;
   margin-left: 25px;
-}
+} */
 
 button:disabled {
   opacity: 0.5;
