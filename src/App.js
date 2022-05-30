@@ -1,30 +1,46 @@
 import React from 'react';
+import "./styles.css";
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+// import Buycrypto from './pages/Buycrypto';
+// import Business from './pages/Business';
+// import Faq from './pages/Faq';
+// import Trackorder from './pages/Trackorder';
 // import './styles/general.scss';
 
 // Components
-// import Main from './pages/main/Main';
-// import { Button } from './components/Button/Button';
-import { Appform } from './components/FormNew';
+
 import { ReviewMy } from './components/reviews/Review.js'
-import { MyComp } from './components/features/index.js'
-import { MyHeader } from './components/header/Header.js';
-// import { FeaturesMy } from './components/features/index.jsx';
+import MyForm from './components/formsub/index.js';
+// import Navbar from './components/nav/Navbar.js';
+import { Features } from './components/features/Features.js';
+import NavbarSlide from './components/side/side';
+import Navbar from './components/nav/Navbar';
+import Footer from './components/footer/Footer';
 
 export function App() {
   return (
     <>
-      {/* <Main /> */}
-      
-      <MyHeader />
-      <Appform />    
-      <MyComp />
-      <ReviewMy />
+      <Router>
+        <NavbarSlide />
+        <Navbar />
+        {/* <Switch>
+          <Route path='/buycrypto' component={Buycrypto} />
+          <Route path='/business' component={Business} />
+          <Route path='/trackorder' component={Trackorder} />
+          <Route path='/faq' component={Faq} />
+        </Switch> */}
+        <MyForm />
+        <div className="._container ">
+          <h2> Our features </h2>
+          <Features />
 
+          <h2> User reviews </h2>
+          <ReviewMy />
+        </div>
 
-
-      
-      {/* <Button disableding={true}>Block</Button>
-      <Button onClick={(value) => click(value)}>Func</Button> */}
+<Footer />
+      </Router>
     </>
   );
 }
+

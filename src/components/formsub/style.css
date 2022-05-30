@@ -1,0 +1,135 @@
+.main_text {
+    max-width: 1400px;
+    width: 100%;
+    margin-bottom: 55px;
+    text-align: center;
+    align-items: center;
+}
+
+.title_text {
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 89px;
+    max-width: 1400px;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.info_text {
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+    color: rgb(21 21 21);
+    margin-bottom: 52px;
+}
+
+.container {
+    width: 660px;
+    margin-top: 5rem;
+    padding: 3rem;
+    border-radius: 4px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.container .success-msg {
+    margin-top: 20px;
+    color: #1d3557;
+    background: #8fffab;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 11px;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+
+.container label,
+.container input {
+    color: #3c4350;
+}
+
+.container label {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+
+.container input {
+    width: 310px;
+    border-radius: 13px;
+    padding: 0.5rem 1rem;
+    padding-left: 1rem;
+    font-size: 22px;
+    height: 65px;
+    /* Заливка инпутов */
+    background: #f8f8f8;
+    /* Обводка инпутов */
+    border: 1px solid #dadce0;
+    border-radius: 13px;
+}
+
+.container .form-row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+    justify-content: space-between;
+}
+
+.container button {
+    color: #fff;
+    width: 240px;
+    height: 65px;
+    font-size: 22px;
+    background: #3463f8;
+    border-radius: 13px;
+    border: none;
+    cursor: pointer;
+    padding: 0.4rem 1.2rem;
+    margin-left: 24px;
+}
+
+.container button:hover {
+    background: #2953db;
+}
+
+.container .input-error {
+    border-color: #e63946;
+}
+
+.container .error {
+    margin-top: 20px;
+    color: #e63946;
+    font-size: 1rem;
+    margin-top: 0.3rem;
+}
+
+.container .disabled-btn {
+    cursor: not-allowed;
+    background: rgba(29, 53, 87, 0.8);
+}
+
+.mainform {
+    display: flex;
+    width: 575px;
+    margin: 0 auto;
+    margin-top: 55px;
+    margin-bottom: 330px;
+}
+
+@media only screen and (max-width: 600px) {
+    .mainform {
+        display: block;
+
+    }
+
+    .container button {
+        margin-left: 35px;
+    }
+}

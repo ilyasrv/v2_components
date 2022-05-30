@@ -24,7 +24,7 @@ export const ReviewMy = () => {
   // };
 
   return (  
-    <article className="review">
+    <article className="review _container">
       <div className="review__box">
       <div className="header-container">
           <div className="img-container">
