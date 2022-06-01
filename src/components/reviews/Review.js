@@ -24,7 +24,6 @@ export const ReviewMy = () => {
   // };
 
   return (
-    <div className="_container">
       <div className="review">
         <div className="review__box">
           <div className="header-container">
@@ -83,7 +82,6 @@ export const ReviewMy = () => {
           </div>
         </div>
       </div>
-    </div>
   );
 };
 

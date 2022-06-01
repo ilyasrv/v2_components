@@ -26,7 +26,7 @@
     margin-bottom: 52px;
 }
 
-.container .success-msg {
+.wrapper .success-msg {
     margin-top: 20px;
     color: #1d3557;
     background: #8fffab;
@@ -41,17 +41,17 @@
 }
 
 
-.container label,
-.container input {
+.wrapper label,
+.wrapper input {
     color: #3c4350;
 }
 
-.container label {
+.wrapper label {
     font-size: 1.4rem;
     margin-bottom: 0.5rem;
 }
 
-.container input {
+.wrapper input {
     width: 310px;
     border-radius: 13px;
     padding: 0.5rem 1rem;
@@ -66,14 +66,14 @@
     color: rgba(27, 27, 27, 0.8)
 }
 
-.container .form-row {
+.wrapper .form-row {
     display: flex;
     flex-direction: column;
     margin-bottom: 1.5rem;
     justify-content: space-between;
 }
 
-.container button {
+.wrapper button {
     color: #fff;
     width: 240px;
     height: 65px;
@@ -86,22 +86,22 @@
     margin-left: 24px;
 }
 
-.container button:hover {
+.wrapper button:hover {
     background: #2953db;
 }
 
-.container .input-error {
+.wrapper .input-error {
     border-color: #e63946;
 }
 
-.container .error {
+.wrapper .error {
     margin-top: 20px;
     color: #e63946;
     font-size: 1rem;
     margin-top: 0.3rem;
 }
 
-.container .disabled-btn {
+.wrapper .disabled-btn {
     cursor: not-allowed;
     background: rgba(29, 53, 87, 0.8);
 }
@@ -114,13 +114,19 @@
     margin-bottom: 330px;
 }
 
-@media only screen and (max-width: 600px) {
-    .mainform {
+@media only screen and (max-width: 650px) {
+        .mainform, .form-row {
         display: block;
+        width: 100%;
+        margin: 0 auto;
 
     }
-
-    .container button {
-        margin-left: 35px;
-    }
+ /* .form-row {
+     max-width: 288px;
+     width: 100%;
+     margin: 0 auto;
+ } */
+    /* .wrapper button {
+        margin-left: 0px;
+    }  */
 }

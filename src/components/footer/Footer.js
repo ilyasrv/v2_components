@@ -33,7 +33,7 @@ export default function Footer() {
                         </li>
                         <li>
                             <div className="lang">
-                                <span>EN</span>
+                                EN
                                 <img
                                     src="https://cdn.builder.io/api/v1/image/assets%2F8a3e1f23265e419f93be1060e79b08d5%2Fd198ca6065c04dc5957c642a27a69417?width=15"
                                     alt="language"
@@ -42,9 +42,6 @@ export default function Footer() {
                                 />
                             </div>
                         </li>
-                        {/* <li>
-                            <button type="submit" className="header-btn">Sign In</button>
-                            </li> */}
                     </ul>
                 </div>
             </footer>

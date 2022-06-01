@@ -47,7 +47,7 @@ const MyForm = () => {
   }, [formErrors]);
 
   return (
-    <div className="container">
+    <div className="wrapper">
       <div className="main_text">
         <h1 className="title_text">Buy your first crypto — it’s easy</h1>
         <span className="info_text">Verified by 10M+ purchases per month</span>
@@ -56,6 +56,7 @@ const MyForm = () => {
       <form className="mainform" onSubmit={handleSubmit} noValidate>
         <div className="form-row">
           {/* <label htmlFor="email">Email</label> */}
+         
           <input
             type="email"
             name="email"
@@ -65,6 +66,7 @@ const MyForm = () => {
             onChange={handleChange}
             className={formErrors.email && "input-error"}
           />
+        
           {Object.keys(formErrors).length === 0 && isSubmitting && (
             <span className="success-msg">Form submitted successfully</span>
           )}
@@ -72,9 +74,10 @@ const MyForm = () => {
             <span className="error">{formErrors.email}</span>
           )}
         </div>
-
-        <button type="submit">Sign Up</button>
-
+            <div className="btn-container">
+              <button type="submit">Sign Up</button>
+            </div>
+          
       </form>
     </div>
   );

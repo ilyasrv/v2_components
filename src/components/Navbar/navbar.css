@@ -68,7 +68,6 @@ a, .brand-name {
 .navigation-menu li a {
   text-decoration: none;
   display: block;
-  font-family: 'Gilroy';
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -101,6 +100,11 @@ a, .brand-name {
 .lang {
   display: flex;
   align-items: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
 
 }
 

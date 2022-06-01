@@ -14,12 +14,6 @@ a:after {
     transition: width 0.3s ease-out;
 }
 
-a:hover:after,
-a:focus:after {
-    width: 100%;
-    /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
-}
-
 .footer-text {
     max-width: 420px;
     width: 100%;
@@ -34,10 +28,8 @@ a:focus:after {
     display: flex;
     align-items: center;
     position: relative;
-    padding: 0.5rem 0rem;
     color: black;
-    padding: 3rem;
-    margin-bottom: 62px;
+    margin-bottom: 65px;
 }
 
 .brand-name {
@@ -65,11 +57,17 @@ a:focus:after {
 .navigation-menu li a {
     text-decoration: none;
     display: block;
-    font-family: 'Gilroy';
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
     line-height: 22px;
     color: #000000;
-    width: 100%;
+    width: auto;
+}
+.lang {
+    font-style: normal;
+    font-weight: 700;   
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
 }

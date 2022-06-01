@@ -6,11 +6,10 @@ export default function Navbar() {
     const [isNavExpanded, setIsNavExpanded] = useState(false)
 
     return (
-        <div className="_container">
             <nav className="navigation">
-                <a href="/" className="logo">
+                <div className="logo">
                     <img src="https://cdn.builder.io/api/v1/image/assets%2F8a3e1f23265e419f93be1060e79b08d5%2F6f1a935d8c0143848a2a9bbe813263ad?width=150" />
-                </a>
+                </div>
                 <button
                     className="hamburger"
                     onClick={() => {
@@ -26,20 +25,20 @@ export default function Navbar() {
                 >
                     <ul>
                         <li>
-                            <a href="/Buycrypto">Buy crypto</a>
+                            <a href="/buycrypto">Buy crypto</a>
                         </li>
                         <li>
-                            <a href="/Business">Business</a>
+                            <a href="/business">Business</a>
                         </li>
                         <li>
-                            <a href="/Trackorder">Track order</a>
+                            <a href="/trackorder">Track order</a>
                         </li>
                         <li>
                             <a href="/faq">FAQ</a>
                         </li>
                         <li>
                             <div className="lang">
-                                <span>EN</span>
+                               EN
                                 <img
                                     src="https://cdn.builder.io/api/v1/image/assets%2F8a3e1f23265e419f93be1060e79b08d5%2Fd198ca6065c04dc5957c642a27a69417?width=15"
                                     alt="language"
@@ -54,6 +53,5 @@ export default function Navbar() {
                     </ul>
                 </div>
             </nav>
-        </div>
     );
 }
