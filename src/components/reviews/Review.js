@@ -23,65 +23,67 @@ export const ReviewMy = () => {
   //   });
   // };
 
-  return (  
-    <article className="review _container">
-      <div className="review__box">
-      <div className="header-container">
-          <div className="img-container">
-            <img src={image} alt={name} className="person-img" />
-            <span className="quote-icon">{score}</span>
+  return (
+    <div className="_container">
+      <div className="review">
+        <div className="review__box">
+          <div className="header-container">
+            <div className="img-container">
+              <img src={image} alt={name} className="person-img" />
+              <span className="quote-icon">{score}</span>
+            </div>
+            <h4 className="author">{name}</h4>
+            <p className="job">{job}</p>
+            <hr className="underline" />
           </div>
-        <h4 className="author">{name}</h4>
-        <p className="job">{job}</p>
-        <hr className="underline" />
-      </div>
-      <div className="button-container">
-        <p className="info">{text}</p>
-      </div>
-      </div>
-      <div className="review__box">
-      <div className="header-container">
-          <div className="img-container">
-            <img src={image} alt={name} className="person-img" />
-            <span className="quote-icon">{score}</span>
+          <div className="button-container">
+            <p className="info">{text}</p>
           </div>
-        <h4 className="author">{name}</h4>
-        <p className="job">{job}</p>
-        <hr className="underline" />
-      </div>
-      <div className="button-container">
-        <p className="info">{text}</p>
-      </div>
-      </div>
-      <div className="review__box">
-      <div className="header-container">
-          <div className="img-container">
-            <img src={image} alt={name} className="person-img" />
-            <span className="quote-icon">{score}</span>
+        </div>
+        <div className="review__box">
+          <div className="header-container">
+            <div className="img-container">
+              <img src={image} alt={name} className="person-img" />
+              <span className="quote-icon">{score}</span>
+            </div>
+            <h4 className="author">{name}</h4>
+            <p className="job">{job}</p>
+            <hr className="underline" />
           </div>
-        <h4 className="author">{name}</h4>
-        <p className="job">{job}</p>
-        <hr className="underline" />
-      </div>
-      <div className="button-container">
-        <p className="info">{text}</p>
-      </div>
-      </div>
-      <div className="review__box">
-      <div className="header-container">
-          <div className="img-container">
-            <img src={image} alt={name} className="person-img" />
-            <span className="quote-icon">{score}</span>
+          <div className="button-container">
+            <p className="info">{text}</p>
           </div>
-        <h4 className="author">{name}</h4>
-        <p className="job">{job}</p>
-        <hr className="underline" />
+        </div>
+        <div className="review__box">
+          <div className="header-container">
+            <div className="img-container">
+              <img src={image} alt={name} className="person-img" />
+              <span className="quote-icon">{score}</span>
+            </div>
+            <h4 className="author">{name}</h4>
+            <p className="job">{job}</p>
+            <hr className="underline" />
+          </div>
+          <div className="button-container">
+            <p className="info">{text}</p>
+          </div>
+        </div>
+        <div className="review__box">
+          <div className="header-container">
+            <div className="img-container">
+              <img src={image} alt={name} className="person-img" />
+              <span className="quote-icon">{score}</span>
+            </div>
+            <h4 className="author">{name}</h4>
+            <p className="job">{job}</p>
+            <hr className="underline" />
+          </div>
+          <div className="button-container">
+            <p className="info">{text}</p>
+          </div>
+        </div>
       </div>
-      <div className="button-container">
-        <p className="info">{text}</p>
-      </div>
-      </div>
-    </article>
+    </div>
   );
 };
 

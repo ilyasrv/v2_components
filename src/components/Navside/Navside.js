@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import * as FaIcons from 'react-icons/fa';
 import * as AiIcons from 'react-icons/ai';
 import { Link } from 'react-router-dom';
-import { SidebarData } from './SliderData';
-import './side.css';
+import { SidebarData } from './SideData';
+import './navside.css';
 import { IconContext } from 'react-icons';
 
-function NavbarSlide() {
+function NavbarSide() {
   const [sidebar, setSidebar] = useState(false);
 
   const showSidebar = () => setSidebar(!sidebar);
@@ -43,4 +43,4 @@ function NavbarSlide() {
   );
 }
 
-export default NavbarSlide;
+export default NavbarSide;

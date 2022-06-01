@@ -7,7 +7,6 @@
 }
 
 .title_text {
-
     font-style: normal;
     font-weight: 700;
     font-size: 72px;
@@ -25,15 +24,6 @@
     line-height: 26px;
     color: rgb(21 21 21);
     margin-bottom: 52px;
-}
-
-.container {
-    width: 660px;
-    margin-top: 5rem;
-    padding: 3rem;
-    border-radius: 4px;
-    justify-content: space-between;
-    position: relative;
 }
 
 .container .success-msg {
@@ -73,6 +63,7 @@
     /* Обводка инпутов */
     border: 1px solid #dadce0;
     border-radius: 13px;
+    color: rgba(27, 27, 27, 0.8)
 }
 
 .container .form-row {

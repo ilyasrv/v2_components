@@ -1,18 +1,24 @@
-import "./footer.css";
+import "./navbar.css";
 import { useState } from "react";
 import React from "react";
 
-export default function Footer() {
+export default function Navbar() {
     const [isNavExpanded, setIsNavExpanded] = useState(false)
 
     return (
         <div className="_container">
-            <footer className="footer">
-
-                <div className="footer-text">
-                    Indacoin Limited, Suite 4b, 43 Berkeley Square, Mayfair, London, 
-                    Westminster, United Kingdom, W1J 5FJ Company Number 08924450
-                </div>
+            <nav className="navigation">
+                <a href="/" className="logo">
+                    <img src="https://cdn.builder.io/api/v1/image/assets%2F8a3e1f23265e419f93be1060e79b08d5%2F6f1a935d8c0143848a2a9bbe813263ad?width=150" />
+                </a>
+                <button
+                    className="hamburger"
+                    onClick={() => {
+                        setIsNavExpanded(!isNavExpanded)
+                    }}
+                >
+                    {/* hamburger svg code... */}
+                </button>
                 <div
                     className={
                         isNavExpanded ? "navigation-menu expanded" : "navigation-menu"
@@ -20,13 +26,13 @@ export default function Footer() {
                 >
                     <ul>
                         <li>
-                            <a href="/buycrypto">Buy crypto</a>
+                            <a href="/Buycrypto">Buy crypto</a>
                         </li>
                         <li>
-                            <a href="/business">Business</a>
+                            <a href="/Business">Business</a>
                         </li>
                         <li>
-                            <a href="/trackorder">Track order</a>
+                            <a href="/Trackorder">Track order</a>
                         </li>
                         <li>
                             <a href="/faq">FAQ</a>
@@ -42,12 +48,12 @@ export default function Footer() {
                                 />
                             </div>
                         </li>
-                        {/* <li>
+                        <li>
                             <button type="submit" className="header-btn">Sign In</button>
-                            </li> */}
+                        </li>
                     </ul>
                 </div>
-            </footer>
+            </nav>
         </div>
     );
 }

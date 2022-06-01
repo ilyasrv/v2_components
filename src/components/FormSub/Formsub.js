@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
+import "./form.css";
 
-import "./style.css";
 
 const MyForm = () => {
   const intialValues = { email: "" };
@@ -13,20 +13,20 @@ const MyForm = () => {
     console.log(formValues);
   };
 
-  //input change handler
+  // input change handler
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormValues({ ...formValues, [name]: value });
   };
 
-  //form submission handler
+  // form submission handler
   const handleSubmit = (e) => {
     e.preventDefault();
     setFormErrors(validate(formValues));
     setIsSubmitting(true);
   };
 
-  //form validation handler
+  // form validation handler
   const validate = (values) => {
     let errors = {};
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
@@ -61,6 +61,7 @@ const MyForm = () => {
             name="email"
             id="email"
             value={formValues.email}
+            placeholder="Enter your email"
             onChange={handleChange}
             className={formErrors.email && "input-error"}
           />

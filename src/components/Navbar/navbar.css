@@ -1,9 +1,3 @@
-.container {
-  width: 1400px;
-  margin: 0 auto;
-
-}
-
 a {
 	position: relative; 
 	cursor: pointer;
@@ -22,13 +16,11 @@ a:after {
 
 a:hover:after,
 a:focus:after {
-	width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+	width: 100%;
 }
 
-
-
 .header-btn {
-  width: 99px;
+    width: 99px;
     height: 40px;
     color: #fff;
     font-size: 18px;
@@ -42,17 +34,16 @@ a:focus:after {
 
 
 .navigation {
-  height: 60px;
   display: flex;
   align-items: center;
   position: relative;
   padding: 0.5rem 0rem;
   color: black;
   margin-bottom: 215px;
-  padding: 3rem;
+  padding-top: 1rem;
 }
 
-.brand-name {
+a, .brand-name {
   text-decoration: none;
   color: black;
   font-size: 1.3rem;

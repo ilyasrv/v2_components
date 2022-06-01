@@ -1,13 +1,6 @@
-.container {
-    width: 1400px;
-    margin: 0 auto;
-
-}
-
 a {
     position: relative;
     cursor: pointer;
-
 }
 
 a:after {
@@ -34,8 +27,6 @@ a:focus:after {
     color: black;
     font-size: 18px;
 }
-
-
 
 
 .footer {
